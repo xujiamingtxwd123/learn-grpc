@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package="./;pb";
+
+
+service Learn7 {
+  rpc SayLearn7 (Learn7Request) returns (Learn7Reply) {}
+}
+
+message Learn7Request {
+  string name = 1;
+}
+
+message Learn7Reply {
+  string message = 1;
+}
+
